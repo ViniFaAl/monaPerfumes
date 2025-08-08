@@ -1,0 +1,42 @@
+/*Cabeçalho*/
+.cabecalho .img p {
+    color: #00256f;
+}
+
+.cabecalho .links-paginas a {
+    color: #00256f;
+}
+
+/*Titulos da página*/
+.titulo-pagina {
+    background-color: #00256f;
+}
+
+/*Perfumes Masculinos*/
+.perfumes-masculinos div figcaption {
+    background-color: #00256f;
+}
+
+.perfumes-masculinos a {
+    background-color: #00256f;
+}
+
+.perfumes-masculinos a:hover {
+    background-color: #ffc52c;
+    color: #00256f;
+}
+
+/*Botão Voltar*/
+.botao-voltar a {
+    background-color: #00256f;
+}
+
+.botao-voltar a:hover {
+    background-color: #ffc52c;
+    color: #00256f;
+}
+
+/*Rodape da pagina*/
+.rodape, .fim {
+    background-color: #00256f;
+}

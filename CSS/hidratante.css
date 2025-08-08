@@ -1,0 +1,45 @@
+/*Cabeçalho*/
+.cabecalho .img p, .cabecalho .links-paginas a {
+    color: #e8eff4;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0);
+}
+
+.titulo-pagina {
+    background-color: #ffc52c;
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-pagina h1, .titulo-pagina h2 {
+    color: #e8eff4;
+}
+
+/*Hidratantes*/
+.hidratantes div figcaption {
+    background-color: #e8eff4;
+}
+
+.hidratantes a {
+    background-color: #e8eff4;
+}
+
+.hidratantes a:hover {
+    background-color: #ffc52c;
+    color: #e8eff4;
+}
+
+/*Rodape da página*/
+.rodape, .fim {
+    background-color: #ffc52c;
+    color: #e8eff4;
+}
+
+.rodape a {
+    color: #e8eff4;
+}
+
+/*Responsivo*/
+@media screen and (max-width: 835px) {
+
+}
+
+
