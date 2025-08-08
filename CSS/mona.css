@@ -557,6 +557,14 @@ header {
         padding-bottom: 10px;
     }
 
+    .cabecalho .links-paginas {
+        width: 100%;
+    }
+
+    .cabecalho .links-paginas a {
+        font-size: 20px;
+    }
+
     /*Capa da página*/
     .capa-pagina {
         height: 250px;
@@ -661,4 +669,36 @@ header {
         font-size: 20px;
         padding: 10px 0;
     }
+}
+
+@media screen and (max-width: 394px) {
+    .cabecalho .links-paginas a {
+        font-size: 20px;
+        padding: 5px 0;
+        margin-right: 10px;
+        border-bottom: 1px solid #5b065b;
+    }
+
+    .primeiro-texto h1 {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .terceiro-texto h2 {
+        font-size: 22px;
+    }
+
+    .perf-fem .text-fem, .perf-masc .text-masc, .hidra-text p {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .segundo-texto .texto2 p {
+        font-size: 20px;
+    }
+
+    .terceiro-texto p {
+        font-size: 20px;
+    }
+    
 }
