@@ -77,6 +77,7 @@ header {
     font-weight: normal;
     cursor: pointer;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .cabecalho .links-paginas a:hover {
@@ -329,6 +330,14 @@ header {
     border-radius: 10%;
 }
 
+.video video {
+    border: 3px solid #5b065b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
 *::-webkit-scrollbar {
   height: 10px;
   width: 10px;
@@ -385,12 +394,12 @@ header {
 }
 
 .img-frasco-novos {
-    width: 480px;
+    width: 600px;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 50px;
+    margin: 0 90px 0 50px;
 }
 
 .img-frasco-novos img {
@@ -403,18 +412,18 @@ header {
 
 /*Foto da dona*/
 .minha-foto {
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
-    margin: 0 50px;
+    padding-left: 20px;
 }
 
 .minha-foto img {
     width: 200px;
     height: 200px;
     border-radius: 90%;
-    margin-left: 60px;
+    
 }
 
 /*Contatos*/
@@ -486,7 +495,8 @@ header {
 
     .img-frasco-novos {
         margin: 0;
-        width: 400px;
+        width: 600px;
+        gap: 20px;
     }
 
     .img-frasco-novos img {
@@ -511,6 +521,16 @@ header {
 }
 
 @media screen and (max-width: 841px ) {
+    .cabecalho  {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .capa-pagina {
+        height: 400px;
+        background-size: cover;
+    }
+
     .perf-fem .text-fem, .perf-masc .text-masc {
         font-size: 26px;
         padding: 0 20px;
@@ -539,6 +559,106 @@ header {
     .contatos a {
         font-size: 18px;
     }
+
+    .minha-foto {
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 691px) {
+    /*Topo*/
+    header {
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .cabecalho .img {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .cabecalho .links-paginas {
+        width: 100%;
+    }
+
+    .cabecalho .links-paginas a {
+        font-size: 20px;
+    }
+
+    /*Capa da página*/
+    .capa-pagina {
+        height: 300px;
+        margin-top: 120px;
+        background-image: url('/assets/frase-motivacional.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;     
+    }
+
+    /*Primeiro texto*/
+    .primeiro-texto {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .primeiro-texto h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .perf-fem, .perf-masc,.hidratante {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .perf-fem .img-fem, .perf-masc .img-masc {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .perf-fem .text-fem, .perf-masc .text-masc, .hidra-text p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .segundo-texto {
+        width: 100%;
+        text-align: center;
+        color: #5b065b;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .terceiro-texto h2 {
+        font-size: 28px;
+        text-align: center;
+        color: #5b065b;
+        padding: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 429px) {
@@ -628,6 +748,18 @@ header {
         font-size: 24px;
     }
 
+    .itens-hidra {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .video {
+        margin-bottom: 10px;
+    }
+
     /*Rodape da página*/
     .rodape {
         flex-direction: column-reverse;
@@ -648,6 +780,15 @@ header {
         height: 150px;
         margin: 10px 0 10px 0;
         border-radius: 40%;
+    }
+
+    .img-frasco-novos {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     .contatos { 
@@ -701,4 +842,92 @@ header {
         font-size: 20px;
     }
     
+    .img-frasco-novos {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-frasco-novos img {
+        width: 110px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .fim p {
+        font-size: 14px;
+    }
 }
+
+@media screen and (max-width: 361px) {
+    header {
+       width: 100%;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabecalho {
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .cabecalho .links-paginas a {
+        font-size: 18px;
+        padding: 5px 0;
+        margin-right: 5px;
+    }
+
+    .capa-pagina {
+        height: 150px;
+        margin-top: 90px;
+        background-image: url('/assets/frase-motivacional.png');
+        background-position: center;
+        background-repeat: no-repeat;     
+    }
+
+    .primeiro-texto h1 {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .terceiro-texto h2 {
+        font-size: 20px;
+    }
+
+    .perf-fem .text-fem, 
+    .perf-masc .text-masc, 
+    .hidra-text p {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .segundo-texto .texto2 p {
+        font-size: 18px;
+    }
+
+    .terceiro-texto p {
+        font-size: 18px;
+    }
+
+    .rodape {
+        padding: 10px;
+    }
+
+    .novidades {
+        margin-top: -20px;
+    }
+
+    .img-frasco-novos img {
+        width: 100px;
+    }
+}
+
+
